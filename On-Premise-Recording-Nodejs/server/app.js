@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 
 app.post('/recorder/v1/start', (req, res, next) => {
     let { body } = req;
+    let { body } = req;
     let { appid, channel, key } = body;
     if (!appid) {
         throw new Error("appid is mandatory");
